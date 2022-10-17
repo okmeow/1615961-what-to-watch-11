@@ -1,7 +1,7 @@
 # Личный проект «Что посмотреть»
 
 * Студент: [Илья Тарасов](https://up.htmlacademy.ru/react/11/user/1615961).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
