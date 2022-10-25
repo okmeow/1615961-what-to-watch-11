@@ -7,9 +7,10 @@ type MainPageProps = {
   genre: string;
   year: number;
   src: string;
+  titleCard: string;
 }
 
-function MainPage({toWatchCount, title, genre, year, src}: MainPageProps): JSX.Element {
+function MainPage({toWatchCount, title, genre, year, src, titleCard}: MainPageProps): JSX.Element {
   return (
     <React.Fragment>
       <section className="film-card">
@@ -112,23 +113,23 @@ function MainPage({toWatchCount, title, genre, year, src}: MainPageProps): JSX.E
 
           <div className="catalog__films-list">
 
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
-            {FilmCard()}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
+            {FilmCard({titleCard})}
 
           </div>
 

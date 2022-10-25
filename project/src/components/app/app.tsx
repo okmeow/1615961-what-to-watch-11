@@ -6,10 +6,11 @@ type AppMainPageProps = {
   genre: string;
   year: number;
   src: string;
+  titleCard: string;
 }
 
 function App(props: AppMainPageProps): JSX.Element {
-  const {toWatchCount, title, genre, year, src} = props;
+  const {toWatchCount, title, genre, year, src, titleCard} = props;
 
   return (
     <MainPage
@@ -18,6 +19,7 @@ function App(props: AppMainPageProps): JSX.Element {
       genre={genre}
       year={year}
       src={src}
+      titleCard={titleCard}
     />
   );
 }
