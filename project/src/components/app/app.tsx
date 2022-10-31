@@ -43,7 +43,7 @@ function App(props: AppMainPageProps): JSX.Element {
           }
         />
         <Route
-          path={AppRoute.Film}
+          path={`${AppRoute.Film}/:id`}
           element={<FilmPage />}
         />
         <Route
