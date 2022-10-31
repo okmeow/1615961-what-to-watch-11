@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from '../footer/footer';
-import {Link} from 'react-router-dom';
-import {AppRoute} from '../../const';
+import Logo from '../logo/logo';
 
 function FilmPage(): JSX.Element {
   return (
@@ -15,13 +14,7 @@ function FilmPage(): JSX.Element {
           <h1 className="visually-hidden">WTW</h1>
 
           <header className="page-header film-card__head">
-            <div className="logo">
-              <Link to={AppRoute.Main} className="logo__link">
-                <span className="logo__letter logo__letter--1">W</span>
-                <span className="logo__letter logo__letter--2">T</span>
-                <span className="logo__letter logo__letter--3">W</span>
-              </Link>
-            </div>
+            <Logo />
 
             <ul className="user-block">
               <li className="user-block__item">
