@@ -7,6 +7,7 @@ import ToWatchList from '../../components/to-watch-list/to-watch-list';
 import AddReview from '../../components/add-review/add-review';
 import Player from '../../components/player/player';
 import PrivateRoute from '../private-route/private-route';
+import PageNotFound from '../../components/page-not-found/page-not-found';
 
 type AppMainPageProps = {
   toWatchCount: number;
@@ -58,6 +59,10 @@ function App(props: AppMainPageProps): JSX.Element {
         <Route
           path={AppRoute.Player}
           element={<Player />}
+        />
+        <Route
+          path="*"
+          element={<PageNotFound />}
         />
       </Routes>
     </BrowserRouter>
