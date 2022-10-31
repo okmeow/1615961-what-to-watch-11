@@ -1,6 +1,8 @@
+import React from 'react';
+
 function FilmPage(): JSX.Element {
   return (
-    <>
+    <React.Fragment>
       <section className="film-card film-card--full">
         <div className="film-card__hero">
           <div className="film-card__bg">
@@ -158,7 +160,7 @@ function FilmPage(): JSX.Element {
           </div>
         </footer>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ToWatchList(): JSX.Element {
   return (
     <div className="user-page">
