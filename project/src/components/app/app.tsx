@@ -8,6 +8,8 @@ import AddReview from '../../components/add-review/add-review';
 import Player from '../../components/player/player';
 import PrivateRoute from '../private-route/private-route';
 import PageNotFound from '../../components/page-not-found/page-not-found';
+import {Films} from '../../types/types';
+import {Reviews} from '../../types/types';
 
 type AppMainPageProps = {
   toWatchCount: number;
@@ -16,10 +18,12 @@ type AppMainPageProps = {
   year: number;
   src: string;
   titleCard: string;
+  films: Films;
+  reviews: Reviews;
 }
 
 function App(props: AppMainPageProps): JSX.Element {
-  const {toWatchCount, title, genre, year, src, titleCard} = props;
+  const {toWatchCount, title, genre, year, src, titleCard, films, reviews} = props;
 
   return (
     <BrowserRouter>

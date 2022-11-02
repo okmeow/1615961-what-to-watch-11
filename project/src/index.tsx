@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/app/app';
+import {films} from './mocks/films';
+import {reviews} from './mocks/reviews';
 
 const Setting = {
   ToWatchCount: 9,
@@ -30,6 +32,8 @@ root.render(
       year = {PromoFilm.Year}
       src = {PromoFilm.Src}
       titleCard = {cardFilm.TitleCard}
+      films = {films}
+      reviews = {reviews}
     />
   </React.StrictMode>,
 );
