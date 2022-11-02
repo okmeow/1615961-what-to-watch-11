@@ -47,7 +47,7 @@ function App(props: AppMainPageProps): JSX.Element {
           }
         />
         <Route
-          path={`${AppRoute.Film}`}
+          path={`${AppRoute.Film}/${films[0].id}`}
           element={<FilmPage films={films} toWatchCount={toWatchCount} />}
         />
         <Route
@@ -56,7 +56,7 @@ function App(props: AppMainPageProps): JSX.Element {
             <PrivateRoute
               authorizationStatus={AuthorizationStatus.NoAuth}
             >
-              <AddReview reviews={reviews}/>
+              <AddReview reviews={reviews} />
             </PrivateRoute>
           }
         />
