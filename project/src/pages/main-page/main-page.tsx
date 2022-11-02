@@ -1,6 +1,7 @@
 import React from 'react';
 import FilmCard from '../../components/film-card/film-card';
 import Footer from '../../components/footer/footer';
+import {Films} from '../../types/types';
 
 type MainPageProps = {
   toWatchCount: number;
@@ -9,9 +10,11 @@ type MainPageProps = {
   year: number;
   src: string;
   titleCard: string;
+  films: Films;
 }
 
-function MainPage({toWatchCount, title, genre, year, src, titleCard}: MainPageProps): JSX.Element {
+function MainPage({toWatchCount, title, genre, year, src, titleCard, films}: MainPageProps): JSX.Element {
+
   return (
     <React.Fragment>
       <section className="film-card">

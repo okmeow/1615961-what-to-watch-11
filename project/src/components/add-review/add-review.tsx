@@ -1,6 +1,11 @@
 import React from 'react';
+import {Reviews} from '../../types/types';
 
-function AddReview(): JSX.Element {
+type AddReviewPageProps = {
+  reviews: Reviews;
+}
+
+function AddReview({reviews}: AddReviewPageProps): JSX.Element {
   return (
     <section className="film-card film-card--full">
       <div className="film-card__header">

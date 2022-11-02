@@ -30,7 +30,7 @@ function App(props: AppMainPageProps): JSX.Element {
       <Routes>
         <Route
           path={AppRoute.Main}
-          element={<MainPage toWatchCount={toWatchCount} title={title} genre={genre} year={year} src={src} titleCard={titleCard} />}
+          element={<MainPage toWatchCount={toWatchCount} title={title} genre={genre} year={year} src={src} titleCard={titleCard} films={films} />}
         />
         <Route
           path={AppRoute.SignIn}
@@ -47,8 +47,8 @@ function App(props: AppMainPageProps): JSX.Element {
           }
         />
         <Route
-          path={`${AppRoute.Film}/:id`}
-          element={<FilmPage />}
+          path={`${AppRoute.Film}`}
+          element={<FilmPage films={films} toWatchCount={toWatchCount} />}
         />
         <Route
           path={AppRoute.AddReview}
@@ -56,7 +56,7 @@ function App(props: AppMainPageProps): JSX.Element {
             <PrivateRoute
               authorizationStatus={AuthorizationStatus.NoAuth}
             >
-              <AddReview />
+              <AddReview reviews={reviews}/>
             </PrivateRoute>
           }
         />
