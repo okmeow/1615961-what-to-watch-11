@@ -1,6 +1,6 @@
 import React from 'react';
-import FilmCard from '../../components/film-card/film-card';
 import Footer from '../../components/footer/footer';
+import FilmList from '../../components/film-list/film-list';
 import {Films} from '../../types/types';
 
 type MainPageProps = {
@@ -115,27 +115,7 @@ function MainPage({toWatchCount, title, genre, year, src, titleCard, films}: Mai
             </li>
           </ul>
 
-          <div className="catalog__films-list">
-
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-            {FilmCard({titleCard})}
-
-          </div>
+          {FilmList({films})}
 
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>
